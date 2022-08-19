@@ -7,4 +7,4 @@ import java.math.BigDecimal;
 public interface CalculoPagamento {
 BigDecimal calculoPagamento(PagamentoModel pagamentoModel);
 }
-}
+

@@ -14,10 +14,10 @@ public class PagamentoModel {
     private Long indice;
     @Column(length = 100, nullable = false)
     private String status;
-    @Column(length = 10, nullable = false)
+    @Column(name = "valor_a_pagar", length =100, nullable = false)
     private BigDecimal valorAPagar;
-    @Column(length = 10, nullable = false)
+    @Column(name = "diferenca_valor", length = 100, nullable = false)
     private BigDecimal diferencaValor;
-    @Column(length = "10", nullable = false)
+    @Column(name = "valor_pago", length = 100, nullable = false)
     private BigDecimal valorPago    ;
 }

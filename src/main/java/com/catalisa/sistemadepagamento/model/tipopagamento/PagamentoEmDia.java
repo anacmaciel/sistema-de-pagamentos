@@ -4,7 +4,7 @@ import com.catalisa.sistemadepagamento.model.PagamentoModel;
 
 import java.math.BigDecimal;
 
-public class PagamentoEmDia extends CalculoPagamento {
+public class PagamentoEmDia implements CalculoPagamento {
 
     @Override
     public BigDecimal calculoPagamento(PagamentoModel pagamentoModel) {
