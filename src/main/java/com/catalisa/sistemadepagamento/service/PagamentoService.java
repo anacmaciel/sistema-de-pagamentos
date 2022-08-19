@@ -21,7 +21,7 @@ public class PagamentoService {
         return pagamentoRepository.findById(indice);
     }
 
-    public PagamentoModel cadastrar(PagamentoModel pagamentoModel) {
+    public PagamentoModel registrar(PagamentoModel pagamentoModel) {
         pagamentoModel.getIndice();
         pagamentoModel.getStatus();
         pagamentoModel.getValorAPagar();

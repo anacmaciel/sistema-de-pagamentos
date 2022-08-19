@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class PagamentoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long indice;
+    private Long indice;
     @Column(length = 100, nullable = false)
     private String status;
     @Column(length = 100, nullable = false)
