@@ -27,6 +27,7 @@ public class PagamentoService {
         PagamentoFactory pagamentoFactory = new PagamentoFactory();
         BigDecimal valor = pagamentoFactory.calculoPagamento(pagamentoModel.getStatus()).calculoPagamento(pagamentoModel);
         pagamentoModel.getIndice();
+        pagamentoModel.getStatus();
         pagamentoModel.getValorAPagar();
         pagamentoModel.getDiferencaValor();
         pagamentoModel.setValorAPagar(valor);
@@ -38,6 +39,7 @@ public class PagamentoService {
         PagamentoFactory pagamentoFactory = new PagamentoFactory();
         BigDecimal valor = pagamentoFactory.calculoPagamento(pagamentoModel.getStatus()).calculoPagamento(pagamentoModel);
         pagamentoModel.getIndice();
+        pagamentoModel.getStatus();
         pagamentoModel.getValorAPagar();
         pagamentoModel.getDiferencaValor();
         return pagamentoRepository.save(pagamentoModel);
