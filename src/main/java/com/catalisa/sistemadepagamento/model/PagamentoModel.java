@@ -18,6 +18,6 @@ public class PagamentoModel {
     private BigDecimal valorAPagar;
     @Column(name = "diferenca_valor", length = 100, nullable = false)
     private BigDecimal diferencaValor;
-    @Column(name = "valor_pago", length = 100, nullable = false)
+    @Column(name = "valor_pago", length = 100)
     private BigDecimal valorPago    ;
 }

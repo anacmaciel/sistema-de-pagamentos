@@ -30,7 +30,7 @@ public class PagamentoService {
         pagamentoModel.getStatus();
         pagamentoModel.getValorAPagar();
         pagamentoModel.getDiferencaValor();
-        pagamentoModel.setValorAPagar(valor);
+        pagamentoModel.setValorPago(valor);
         return pagamentoRepository.save(pagamentoModel);
     }
 
@@ -42,6 +42,7 @@ public class PagamentoService {
         pagamentoModel.getStatus();
         pagamentoModel.getValorAPagar();
         pagamentoModel.getDiferencaValor();
+        pagamentoModel.setValorPago(valor);
         return pagamentoRepository.save(pagamentoModel);
     }
 
